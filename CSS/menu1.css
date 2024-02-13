@@ -1,6 +1,7 @@
 div.cabecera {
     display: inline-block;
-    background-color: rgb(155, 155, 155);
+    /* Mejor crep que la pagina en blanco y luego a los menus les metemos colores*/
+    background-color: white;
     width: 100%;
     margin: 0;
     
@@ -9,6 +10,7 @@ div.cabecera {
 .enlaces {
     display: inline-block;
     width: 70%;
+    padding-left: 0px;
 
     
 }
@@ -16,7 +18,7 @@ div.cabecera {
 .enlaces p {
     display: inline-block;
     width: 20%;
-    margin-top: -25px;
+    margin-top: 25px;
 }
 
 div.dropdown{
