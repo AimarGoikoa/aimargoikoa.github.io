@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
 
 :root {
-    --color-primario: #c7a17a;
+    --color-primario: #6A9AFF;
     --background-color: #f9f5f0;
     --dark-color: #151515;
 }
@@ -13,7 +13,7 @@ html{
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 0 auto;
     box-sizing: border-box;
 }
 
@@ -30,6 +30,7 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-inline: 20px;
 }
 
 .soporte1{
@@ -180,4 +181,7 @@ manu a::after{
     color: #fff;
 }
 
-
+.soporte1 a{
+    color: black;
+    text-decoration: none;
+}
