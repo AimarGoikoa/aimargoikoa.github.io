@@ -139,3 +139,45 @@ manu a::after{
     color: white;
 }
 
+.form{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid #fff;
+    background-color: #fff;
+    height: 4.4rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.form input{
+    outline: none;
+    font-family: inherit;
+    border: none;
+    width: 25rem;
+    font-size: 1.4rem;
+    padding: 0 2rem;
+    color: #777;
+    cursor: pointer;
+}
+
+.form input::-webkit-search-cancel-button{
+    appearance: none;
+}
+
+.form .Buscar{
+    border: none;
+    background-color: var(--color-primario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem;
+}
+
+.Buscar i{
+    font-size: 2rem;
+    color: #fff;
+}
+
+
