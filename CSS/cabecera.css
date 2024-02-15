@@ -185,3 +185,22 @@ manu a::after{
     color: black;
     text-decoration: none;
 }
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+    background-color: #6A9AFF;
+    padding: 5px;
+
+}
