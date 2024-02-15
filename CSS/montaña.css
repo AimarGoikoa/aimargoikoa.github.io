@@ -1,0 +1,14 @@
+.tarjeta img {
+    width: 100%;
+
+}
+
+.bicis {
+    display: inline-block;
+    margin-inline: 20%;
+}
+
+div.tarjeta {
+    width: 25%;
+    display: inline-block;
+}
