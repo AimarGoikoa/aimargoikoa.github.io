@@ -248,3 +248,20 @@ Banerr
     text-transform: uppercase;
     border-radius: 3rem;
 }
+
+/* 
+
+Contenido del menu
+
+*/
+
+.contenido_menu{
+    background-color: var(--background-color);
+}
+
+.contenido1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    padding: 3rem 0;
+}
