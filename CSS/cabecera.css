@@ -192,6 +192,10 @@ manu a::after{
     cursor: pointer;
 }
 
+.dropdown_content li{
+    padding: 15px;
+}
+
 .dropdown_content {
     display: none;
     position: absolute;
@@ -211,43 +215,7 @@ Banerr
 
 */
 
-.foto_principal{
-    background-image: linear-gradient(100deg, #000000, #00000020), url('/Imagenes/Imagen_principal.jpg');
-    height: 60rem;
-    background-size: cover;
-    background-position: center;
-}
 
-.foto_contenido{
-    max-width: 90rem;
-    margin: 0 auto;
-    padding: 25rem 0;
-}
-
-.foto_contenido p{
-    color: var(--color-primario);
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    font-weight: 500;
-}
-
-.foto_contenido h2{
-    color: white;
-    font-size: 3.5rem;
-    font-weight: 500;
-    line-height: 1.2;
-}
-
-.foto_contenido a{
-    margin-top: 2rem;
-    text-decoration: none;
-    color: white;
-    background-color: var(--color-primario);
-    display: inline-block;
-    padding: 1rem 3rem;
-    text-transform: uppercase;
-    border-radius: 3rem;
-}
 
 /* 
 
@@ -255,13 +223,6 @@ Contenido del menu
 
 */
 
-.contenido_menu{
-    background-color: var(--background-color);
-}
 
-.contenido1{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 3rem;
-    padding: 3rem 0;
-}
+
+
