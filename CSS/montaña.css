@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
 
+:root {
+    --color-primario: #6A9AFF;
+    --background-color: #f9f5f0;
+    --dark-color: #151515;
+}
+
 body {
     background-color: #f9f5f0;
     padding: 0px;

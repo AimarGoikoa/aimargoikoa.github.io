@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
 
+:root {
+    --color-primario: #6A9AFF;
+    --background-color: #f9f5f0;
+    --dark-color: #151515;
+}
 
 .contenido_menu{
     background-color: var(--background-color);
 }
+
+
 
 .contenido1{
     display: grid;
@@ -11,3 +19,35 @@
     padding: 3rem 0;
 }
 
+.contenido2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.5rem 0;
+}
+
+.contenido2 i{
+    font-size: 2.7rem;
+    color: var(--color-primario);
+
+}
+
+.contenido3{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contenido3 span{
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--dark-color)
+}
+
+.contenido3 p{
+    color: grey;
+    font-weight: 500;
+}
