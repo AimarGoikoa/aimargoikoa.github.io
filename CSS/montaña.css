@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
 
+body {
+    background-color: #f9f5f0;
+    padding: 0px;
+    margin: 0px;
+}
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 20px;
+    margin-top: 10%;
 }
 
 .image-box {
@@ -42,4 +49,30 @@
 a {
     font-weight: bold;
     color: white;
+}
+
+h2 {
+    text-align: center;
+    width: 100%;
+    background-color: #6A9AFF;
+    margin: 0px;
+    font-family: 'Protest Riot' ,sans-serif;
+    padding: 10px;
+}
+
+p.escoger {
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    font-family: 'Protest Riot' ,sans-serif;
+    background-color: #dbd9d5;
+    padding: 10px;
+}
+
+.titulo {
+    width: 100%;
+}
+
+.cabecera2 {
+    width: 100%
 }
