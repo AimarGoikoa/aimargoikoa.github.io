@@ -94,13 +94,14 @@ header {
 
 .container-navbar {
     background-color: var(--color-primario);
-}
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1rem 0;   
+    margin-inline: 100px;
+}
 }
 
 .navbar .fa-bars-staggered {
