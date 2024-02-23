@@ -45,10 +45,21 @@ header {
     display: flex;
     align-items: center;
     gap: 2rem;
+    margin-left: 70px;
+}
+
+.atencion-cliente a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.atencion-cliente a:visited{
+    color: black;
+    text-decoration: none;
 }
 
 .atencion-cliente i {
-    font-size: 3.3rem;
+    font-size: 4rem;
 }
 
 .contenido-atencion-cliente {
@@ -63,17 +74,18 @@ header {
 }
 
 .contenido-logo img {
-    width: 200px;
+    width: 250px;
 }
 
 .container-usuario {
     display: flex;
     gap: 1rem;
     cursor: pointer;
+    margin-right: 50px;
 }
 
 .container-usuario .fa-cart-shopping {
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: var(--color-primario);
     padding-left: 1rem;
 }
@@ -84,24 +96,23 @@ header {
 }
 
 .container-usuario .fa-user {
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: var(--color-primario);
     padding-right: 2.5rem;
-    border-right: 1px solid #e2e2e2;
+    border-right: 3px dotted #6D83B9;
 }
 
 /******************************************/
 
 .container-navbar {
     background-color: var(--color-primario);
-
+}
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;   
     margin-inline: 100px;
-}
 }
 
 .navbar .fa-bars-staggered {
@@ -119,11 +130,12 @@ header {
 
 .menu a {
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 2rem;
     color: var(--dark-color);
     font-weight: 600;
     text-transform: uppercase;
     position: relative;
+    padding: 15px;
 }
 
 manu a::after {
@@ -171,6 +183,10 @@ manu a::after {
 
 .form input::-webkit-search-cancel-button {
     appearance: none;
+}
+
+.form input{
+    cursor: text;
 }
 
 .form .Buscar {
@@ -229,7 +245,7 @@ manu a::after {
 
 .foto_contenido p {
     color: var(--color-primario);
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     font-weight: 500;
 }
@@ -256,6 +272,8 @@ manu a::after {
 
 .contenido-menu {
     background-color: var(--background-color);
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .container-caracteristicas {
@@ -273,6 +291,9 @@ manu a::after {
     background-color: white;
     border-radius: 1rem;
     padding: 1.5rem 0;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
 }
 
 .carta-caracteristicas i {
@@ -288,12 +309,12 @@ manu a::after {
 
 .caracteristicas-contenido span {
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--dark-color);
 }
 
 .caracteristicas-contenido p {
-    color: grey;
+    color: #42413F;
     font-weight: 500;
 }
 
@@ -366,6 +387,9 @@ manu a::after {
 }
 
 .elementos-categoria span:hover {
+    color: var(--color-primario);
+}
+.elementos-categoria p:hover {
     color: var(--color-primario);
 }
 
