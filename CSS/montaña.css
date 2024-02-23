@@ -6,19 +6,226 @@
     --dark-color: #151515;
 }
 
-body {
-    background-color:#f9f5f0;
-    padding: 0px;
-    margin: 0px;
+html {
+    font-size: 62.5%;
+    font-family: 'Protest Riot', sans-serif;
 }
-.container {
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*********************************/
+
+header {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.container-1 {
+    background-color: var(--background-color);
+}
+
+.container1 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    margin-top: 10%;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 20px;
 }
+
+.atencion-cliente {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 70px;
+}
+
+.atencion-cliente a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.atencion-cliente a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.atencion-cliente i {
+    font-size: 4rem;
+}
+
+.contenido-atencion-cliente {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contenido-logo img {
+    width: 250px;
+}
+
+.container-usuario {
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.container-usuario .fa-cart-shopping {
+    font-size: 3.5rem;
+    color: var(--color-primario);
+    padding-left: 1rem;
+}
+
+.contenido-carrito {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-usuario .fa-user {
+    font-size: 3.5rem;
+    color: var(--color-primario);
+    padding-right: 2.5rem;
+    border-right: 3px dotted #6D83B9;
+}
+
+/******************************************/
+
+.container-navbar {
+    background-color: var(--color-primario);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;   
+    margin-inline: 100px;
+}
+
+.navbar .fa-bars-staggered {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--dark-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    padding: 15px;
+}
+
+manu a::after {
+    content: '';
+    width: 1.5rem;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover::after {
+    opacity: 1;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid #fff;
+    background-color: #fff;
+    height: 4.4rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.form input {
+    outline: none;
+    font-family: inherit;
+    border: none;
+    width: 25rem;
+    font-size: 1.4rem;
+    padding: 0 2rem;
+    color: #777;
+    cursor: pointer;
+}
+
+.form input::-webkit-search-cancel-button {
+    appearance: none;
+}
+
+.form input{
+    cursor: text;
+}
+
+.form .Buscar {
+    border: none;
+    background-color: var(--color-primario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem;
+}
+
+.Buscar i {
+    font-size: 2rem;
+    color: #fff;
+
+    .dropdown {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .dropdown_content li {
+        padding: 15px;
+    }
+    
+    .dropdown_content {
+        display: none;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .dropdown:hover .dropdown_content {
+        display: block;
+        background-color: #6a9aff;
+        padding: 5px;
+    }
+
+/***************************************/
 
 .image-box {
     position: relative;
@@ -77,6 +284,7 @@ p.escoger {
 
 .titulo {
     width: 100%;
+    text-align: center;
 }
 
 .cabecera2 {
