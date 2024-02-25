@@ -879,6 +879,11 @@ manu a::after {
     font-size: 1.6rem;
 }
 
+.informacion ul li img{
+    width: 200px;
+    border-radius: 50%;
+}
+
 .copyright img{
     width: 300px;
 }

@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+:root {
+    --color-primario: #6a9aff;
+    --background-color: #f9f5f0;
+    --dark-color: #151515;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Protest Riot', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*********************************/
+
+header {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.container-1 {
+    background-color: var(--background-color);
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 20px;
+}
+
+.atencion-cliente {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 70px;
+}
+
+.formulario .advertencia{
+    font-size: 13px;  
+	color: #0e0e0e; 
+}
+
+.atencion-cliente a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.atencion-cliente a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.atencion-cliente i {
+    font-size: 4rem;
+}
+
+.contenido-atencion-cliente {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contenido-logo img {
+    width: 250px;
+}
+
+.container-usuario {
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.container-usuario .fa-cart-shopping {
+    font-size: 3.5rem;
+    color: var(--color-primario);
+    padding-left: 1rem;
+}
+
+.contenido-carrito {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-usuario .fa-user {
+    font-size: 3.5rem;
+    color: var(--color-primario);
+    padding-right: 2.5rem;
+    border-right: 3px dotted #6D83B9;
+}
+
+/******************************************/
+
+.container-navbar {
+    background-color: var(--color-primario);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;   
+    margin-inline: 100px;
+}
+
+.navbar .fa-bars-staggered {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--dark-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    padding: 15px;
+}
+
+manu a::after {
+    content: '';
+    width: 1.5rem;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover::after {
+    opacity: 1;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid #fff;
+    background-color: #fff;
+    height: 4.4rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.form input {
+    outline: none;
+    font-family: inherit;
+    border: none;
+    width: 25rem;
+    font-size: 1.4rem;
+    padding: 0 2rem;
+    color: #777;
+    cursor: pointer;
+}
+
+.form input::-webkit-search-cancel-button {
+    appearance: none;
+}
+
+.form input{
+    cursor: text;
+}
+
+.form .Buscar {
+    border: none;
+    background-color: var(--color-primario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem;
+}
+
+.Buscar i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+/**************************************/
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown_content li {
+    padding: 15px;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+    background-color: #6a9aff;
+    padding: 5px;
+}
+
+
+/***********************************/
+
+body{
+    height: 100%;
+    font-family: 'Protest Riot', sans-serif;
+    background-color: #D6B994;
+}
+
+.formulario-contacto{
+    width: 460px; 
+    height: auto;
+    margin: 80px auto;
+	border-radius: 10px;  
+	padding-top: 30px;
+	padding-bottom: 20px;  
+    background-color: #fbfbfb; 
+    padding-left: 30px;
+}
+
+.formulario button p{
+	color: white;   
+}
+
+.formulario span{
+    color: var(--color-primario);
+}
+
+.formulario button{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	background-color: var(--color-primario); 
+	border-color: var(--color-primario); 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 420px;   
+    cursor: pointer;
+}
+
+.formulario-contacto input{
+    background-color: #fbfbfb; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 3px; 
+	border-color: var(--color-primario); 
+	margin-top: 10px;  
+	padding-left: 10px;
+    margin-bottom: 20px; 
+}
+
+.formulario-contacto label{
+    display: block; 
+    float: center; 	
+}
+
+textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 3px; 
+    border-color: var(--color-primario); 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+}
+
+.formulario .h1form{
+	font-size: 39px;  
+	text-align: letf; 
+	padding-bottom: 20px; 
+	color: var(--color-primario);
+}
+
+.formulario .h3form{
+	font-size: 16px; 
+	padding-bottom: 30px;
+	color: var(--dark-color);   
+}
+
+.formulario p{
+        font-size: 14px; 
+        color: #0e0e0e; 
+}
+
+.formulario input:focus{
+	outline:0;
+	border: 3px solid black;
+}
+
+.formulario textarea:focus{
+	outline:0;
+	border: 3px solid black;
+}
+
+.formulario::-webkit-input-placeholder {
+    color: #a8a8a8;
+}
+::-webkit-textarea-placeholder {
+    color: #a8a8a8;
+}
+
+.formulario input .boton{
+    background-color: #6a9aff;
+}
