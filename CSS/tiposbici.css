@@ -39,10 +39,12 @@ p.escoger {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
 }
+
+
 
 .producto {
     background-color: #f2f2f2;
@@ -54,4 +56,58 @@ p.escoger {
 
 img {
     margin-bottom: 35px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.producto-descripcion {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.seccion {
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.texto-producto {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.texto-producto.precio p {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.texto-producto.precio del {
+    color: red;
+    font-size: 14px;
+}
+
+.texto-producto.descripcion p {
+    font-size: 16px;
+}
+
+.texto-producto.especificaciones ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.texto-producto.especificaciones li {
+    font-size: 16px;
+    margin-bottom: 15px;
 }
