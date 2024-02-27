@@ -366,8 +366,12 @@ manu a::after {
 
 .elementos-categoria span {
     font-size: 1.6rem;
-    color: #fff;
     cursor: pointer;
+}
+
+.elementos-categoria span a{
+    color: #fff;
+    text-decoration: none;
 }
 
 .elementos-categoria p {
@@ -388,7 +392,7 @@ manu a::after {
     transform: translate(-50%, 50%);
 }
 
-.elementos-categoria span:hover {
+.elementos-categoria span a:hover {
     color: var(--color-primario);
 }
 .elementos-categoria p:hover {

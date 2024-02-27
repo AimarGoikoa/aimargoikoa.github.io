@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
 
 :root {
-    --color-primario: #6A9AFF;
+    --color-primario: #6a9aff;
     --background-color: #f9f5f0;
     --dark-color: #151515;
 }
@@ -14,36 +14,33 @@ body {
 h2 {
     text-align: center;
     width: 100%;
-    background-color: #6A9AFF;
+    background-color: #6a9aff;
     margin: 0px;
     padding: 10px;
     font-size: 2rem;
 }
 
-hr{
-    background-color: #6A9AFF;
+hr {
+    background-color: #6a9aff;
     border: 5px solid #151515;
 }
-
 
 p.escoger {
     width: 100%;
     text-align: center;
     margin: 0px;
-    font-family: 'Protest Riot' ,sans-serif;
+    font-family: 'Protest Riot', sans-serif;
     background-color: #dbd9d5;
     padding: 10px;
     font-size: 1.5rem;
 }
-
-
 
 .titulo {
     width: 100%;
 }
 
 .cabecera2 {
-    width: 100%
+    width: 100%;
 }
 
 .container {
@@ -52,8 +49,6 @@ p.escoger {
     gap: 20px;
     padding: 20px;
 }
-
-
 
 .producto {
     background-color: #f2f2f2;
