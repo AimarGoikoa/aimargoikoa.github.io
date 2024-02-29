@@ -407,16 +407,28 @@ manu a::after {
 
 .mapa_contenedor {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 50%; 
+    height: 50%;
     margin-bottom: 15px;
 }
     
 .mapa {
-    width: 25%;
+    width: 50%;
 }
 
 body {
     background-color: lightgray;
+}
+
+.direcc_tlf {
+    font-size: large;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.enlace_contacto {
+    font-size: large;
+    text-align: center;
+    color: #151515;
 }
