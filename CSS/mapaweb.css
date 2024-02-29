@@ -53,6 +53,11 @@ header {
     text-decoration: none;
 }
 
+.atencion-cliente a{
+    color: black;
+    text-decoration: none;
+}
+
 .atencion-cliente a:visited{
     color: black;
     text-decoration: none;
@@ -228,9 +233,7 @@ manu a::after {
     background-color: #6a9aff;
     padding: 5px;
 }
-
-/************************************/
-
+/*****************************************/
 .container-pie{
     background-color: var(--color-primario);
 }
@@ -403,7 +406,6 @@ manu a::after {
 .copyright img{
     width: 300px;
 }
-
 /****************MAPA WEB********************/
 
 .mapa_contenedor {
