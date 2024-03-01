@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     aceptarcookiesboton.addEventListener("click", function() {
         avisocookies.style.display = "none";
-
+    
     });
+    
 });

@@ -11,6 +11,7 @@
 
 .aviso-cookies p {
     margin: 0px;
+    font-size: 20px;
 }
 
 #aceptarcookies {
@@ -21,4 +22,5 @@
     cursor: pointer;
     border-radius: 5px;
     margin-top: 10px;
+    font-size: 15px;
 }
