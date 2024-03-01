@@ -1,0 +1,24 @@
+.aviso-cookies {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:  #333;
+    color: #fff ;
+    padding: 20px;
+    text-align: center;
+}
+
+.aviso-cookies p {
+    margin: 0px;
+}
+
+#aceptarcookies {
+    background-color: #FFF;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
