@@ -125,6 +125,9 @@ header {
 .container-navbar {
     background-color: var(--color-primario);
 }
+
+
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -943,7 +946,34 @@ manu a::after {
 /**************************************/
 
 /* 3 tamaños de pantalla (móvil desde 360px hasta 400px, tablet desde 768px hasta 1024px y pantallas a partir de 1024px). Deberán poder adaptarse bien en los rangos definidos para cada dispositivo.*/
+@media screen and (max-width: 1024px) {
+    .container-caracteristicas {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container-productos {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    .contenido-cat {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+    .container-mantenimientos {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+    }
+    @media screen and (max-width: 767px) {
+        .container-productos {
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        }
+        .container-mantenimientos {
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        }
+        .container-caracteristicas {
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+    }
 @media (max-width: 768px){
     
     html{
