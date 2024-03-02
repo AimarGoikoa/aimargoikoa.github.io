@@ -117,8 +117,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;   
-    margin-inline: 100px;
+    padding: 0.5rem 0;   
+    margin-inline: 40px;
 }
 
 .navbar .fa-bars-staggered {
@@ -159,6 +159,14 @@ manu a::after {
 
 .menu a:hover::after {
     opacity: 1;
+}
+
+.contenido-logo:hover{
+    transform: scale(1.20);
+}
+
+.container-usuario i:hover{
+    transform: scale(1.20);
 }
 
 .menu a:hover {
@@ -419,14 +427,9 @@ manu a::after {
     color: black;
 }
 
-.titulo h1 {
-    margin: 0;
-    font-family: 'Protest Riot', sans-serif;
-}
+
 
 .escoger {
-    margin: 0;
-    padding: 10px;
     font-size: 1.2rem;
 }
 
@@ -458,7 +461,7 @@ manu a::after {
     height: auto;
 }
 
-.text {
+.texto {
     position: absolute;
     top: 0;
     left: 0;
@@ -471,16 +474,20 @@ manu a::after {
     transition: opacity 0.3s;
 }
 
-.tarjeta:hover .text {
+.tarjeta:hover .texto {
     opacity: 1;
 }
 
-.text p {
+.atencion-cliente:hover{
+    transform: scale(1.20);
+}
+
+.texto p {
     font-size: 2rem;
     margin: 20px 0;
 }
 
-.text a {
+.texto a {
     display: inline-block;
     padding: 10px 20px;
     background-color: #6A9AFF;
@@ -491,10 +498,13 @@ manu a::after {
     font-size: 1.7rem;
 }
 
-.text a:hover {
+.texto a:hover {
     background-color: #0056b3;
 }
 
+.contenido-noti button:hover{
+    transform: scale(1.20);
+}
 /********************************************/
 
 @media only screen and (max-width: 400px) {
