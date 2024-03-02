@@ -497,3 +497,52 @@ manu a::after {
 .descripcion{
     font-size: 1.5rem;
 }
+
+
+    .imagen {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .descripcion {
+        position: relative;
+        padding: 20px 10px;
+    }
+    @media screen and (min-width: 1024px) {
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        
+    }
+    
+    
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        .producto {
+            width: 50%; 
+            box-sizing: border-box;
+            padding: 0 15px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 767px) {
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        .producto {
+            width: 100%; 
+            box-sizing: border-box;
+            padding: 0 15px;
+        }
+        
+    }

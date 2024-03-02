@@ -248,7 +248,9 @@ manu a::after {
     background-color: #6a9aff;
     padding: 5px;
 }
-/***************************************/
+
+/****************************************/
+
 .container-pie{
     background-color: var(--color-primario);
 }
@@ -423,120 +425,115 @@ manu a::after {
     width: 300px;
 }
 
+.contenido-noti button:hover{
+    transform: scale(1.20);
+}
+
+.contenido-logo:hover{
+    transform: scale(1.20);
+}
+
+.container-usuario i:hover{
+    transform: scale(1.20);
+}
 /**************************************/
 
-/* 3 tamaños de pantalla (móvil desde 360px hasta 400px, tablet desde 768px hasta 1024px y pantallas a partir de 1024px). Deberán poder adaptarse bien en los rangos definidos para cada dispositivo.*/
-@media screen and (max-width: 1024px) {
-    .container-caracteristicas {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.trail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.imagen img{
+    border-radius: 20px;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.producto {
+    margin: 0 80px;
+    perspective: 1000px; 
+}
+
+.imagen {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+}
+
+.imagen:hover {
+    transform: rotateY(180deg); 
+}
+
+.imagen img {
+    width: 100%;
+    backface-visibility: hidden; 
+}
+
+.descripcion {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: rotateY(180deg); 
+    transform-style: preserve-3d; 
+    backface-visibility: hidden; 
+}
+
+.descripcion h3 {
+    margin-top: 0;
+}
+
+.descripcion{
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .producto {
+        width: 33.33%; 
+        box-sizing: border-box;
+        padding: 0 15px;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .container-productos {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }
-    .contenido-cat {
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    }
-    .container-mantenimientos {
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    }
-    }
-    @media screen and (max-width: 767px) {
-        .container-productos {
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-        }
-        .container-mantenimientos {
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-        }
-        .container-caracteristicas {
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        }
-    }
-@media (max-width: 768px){
-    
-    html{
-        font-size: 55%;
-    }
-    .container1{
-        padding: 2rem;
-    }
-    .atencion-cliente{
-        display: none;
-    }
-    .contenido-carrito{
-        display: none;
-    }
-    .navbar{
-        padding: 1rem 2rem;
-    }
-    .navbar .fa-bars-staggered{
-        display: block;
-        color: white;
-        font-size: 3rem;
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
     }
 
-    .menu{
-        display: none;
-    }
-
-    .foto_principal{
-        max-width: 50rem;
-        padding: 25rem 0;
-        margin: 0 auto;
-    }
-
-    .container-caracteristicas{
-        grid-template-columns: repeat(2, 1fr);
-        padding: 3rem 2rem;
-    }
-    .carta-caracteristicas{
-        padding: 2rem;
-    }
-    .h1{
-        font-size: 2.4rem;
-    }
-    .elementos-categoria{
-        height: 12rem;
-    }
-
-    .elementos-categoria p{
-        font-size: 2rem;
-        text-align: center;
-        line-height: 1;
-    }
-
-    .elementos-categoria span{
-        font-size: 1.4rem;
-    }
-    .container-opciones{
-        align-items: center;
-    }
-    .container-opciones span{
-        text-align: center;
-        padding: 1rem 2rem;
-    }
-    .container-productos{
-        grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-    }
-
-    .galeria-fotos{
-        grid-template-columns: repeat(2, 1.5rem);
-    }
-    .container-mantenimientos{
-        overflow: hidden;
-        grid-template-columns: 1fr 1fr;
-        height: 52rem;
-    }
-    .menu-pie{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .copyright{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1.5rem;
+    .producto {
+        width: 50%; 
+        box-sizing: border-box;
+        padding: 0 15px;
     }
 }
-/***********************************************/
+
+
+@media screen and (max-width: 767px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .producto {
+        width: 100%; 
+        box-sizing: border-box;
+        padding: 0 15px;
+    }
+}
