@@ -267,7 +267,7 @@ body{
 	padding-top: 30px;
 	padding-bottom: 20px;  
     background-color: #fbfbfb; 
-    padding-left: 30px;
+    text-align: center;
 }
 
 .formulario button p{
@@ -364,6 +364,43 @@ textarea{
     background-color: #6a9aff;
 }
 
+
+.mapa_contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    margin: auto;
+}
+    
+.mapa {
+    width: 100%;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.direcc_tlf {
+    font-size: large;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.enlace_contacto {
+    font-size: large;
+    text-align: center;
+    color: #151515;
+}
+
+.mapa_contenedor, .formulario-contacto {
+width: 45%;
+}
+
+.contenedor-formulario-mapa {
+    display: flex;
+    justify-content: space-around;
+}
 /******************************************/
 /**************************************/
 
