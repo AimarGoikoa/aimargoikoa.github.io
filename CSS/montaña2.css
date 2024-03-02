@@ -113,6 +113,9 @@ header {
 .container-navbar {
     background-color: var(--color-primario);
 }
+
+
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -159,14 +162,6 @@ manu a::after {
 
 .menu a:hover::after {
     opacity: 1;
-}
-
-.contenido-logo:hover{
-    transform: scale(1.20);
-}
-
-.container-usuario i:hover{
-    transform: scale(1.20);
 }
 
 .menu a:hover {
@@ -216,6 +211,30 @@ manu a::after {
 .Buscar i {
     font-size: 2rem;
     color: #fff;
+}
+
+/**************************************/
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown_content li {
+    padding: 15px;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+    background-color: #6a9aff;
+    padding: 5px;
 }
 
 /**************************************/

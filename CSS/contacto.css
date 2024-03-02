@@ -378,7 +378,7 @@ textarea{
 }
 
 body {
-    background-color: lightgray;
+    background-color: #B4E4FF;
 }
 
 .direcc_tlf {
@@ -402,8 +402,6 @@ width: 45%;
     justify-content: space-around;
 }
 /******************************************/
-/**************************************/
-
 .container-pie{
     background-color: var(--color-primario);
 }
@@ -576,3 +574,4 @@ width: 45%;
 .copyright img{
     width: 300px;
 }
+
