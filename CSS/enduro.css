@@ -448,7 +448,7 @@ manu a::after {
 .imagen img{
     border-radius: 20px;
 }
-.row {
+.columna {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
@@ -498,7 +498,7 @@ manu a::after {
 }
 
 @media screen and (min-width: 1024px) {
-    .row {
+    .columna {
         display: flex;
         flex-wrap: wrap;
     }
@@ -512,7 +512,7 @@ manu a::after {
 
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .row {
+    .columna {
         display: flex;
         flex-wrap: wrap;
     }
@@ -526,7 +526,7 @@ manu a::after {
 
 
 @media screen and (max-width: 767px) {
-    .row {
+    .columna {
         display: flex;
         flex-wrap: wrap;
     }

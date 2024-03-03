@@ -448,7 +448,7 @@ manu a::after {
 .imagen img{
     border-radius: 20px;
 }
-.row {
+.colum_trai {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
@@ -488,15 +488,13 @@ manu a::after {
     transform: rotateY(180deg); 
     transform-style: preserve-3d; 
     backface-visibility: hidden; 
+    font-size: 20px;
 }
 
 .descripcion h3 {
     margin-top: 0;
 }
 
-.descripcion{
-    font-size: 1.5rem;
-}
 
 
     .imagen {
@@ -505,12 +503,8 @@ manu a::after {
         margin: 0 auto;
     }
 
-    .descripcion {
-        position: relative;
-        padding: 20px 10px;
-    }
     @media screen and (min-width: 1024px) {
-        .row {
+        .colum_trai {
             display: flex;
             flex-wrap: wrap;
         }
@@ -520,7 +514,7 @@ manu a::after {
     
     
     @media screen and (min-width: 768px) and (max-width: 1023px) {
-        .row {
+        .colum_trai {
             display: flex;
             flex-wrap: wrap;
         }
@@ -534,7 +528,7 @@ manu a::after {
     
     
     @media screen and (max-width: 767px) {
-        .row {
+        .colum_trai {
             display: flex;
             flex-wrap: wrap;
         }
